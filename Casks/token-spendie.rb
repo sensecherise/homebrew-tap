@@ -7,17 +7,17 @@ cask "token-spendie" do
   desc "Claude Code usage menu bar widget"
   homepage "https://github.com/sensecherise/token-spendie"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   pkg "TokenSpendie-#{version}.pkg"
 
-  uninstall pkgutil: "com.cherise.TokenSpendie",
-            quit:    "com.cherise.TokenSpendie"
+  uninstall quit:    "com.cherise.TokenSpendie",
+            pkgutil: "com.cherise.TokenSpendie"
 
   zap trash: [
-    "~/Library/Preferences/com.cherise.TokenSpendie.plist",
     "~/Library/Application Support/TokenSpendie",
     "~/Library/Caches/com.cherise.TokenSpendie",
+    "~/Library/Preferences/com.cherise.TokenSpendie.plist",
     "~/Library/Saved Application State/com.cherise.TokenSpendie.savedState",
   ]
 end
