@@ -1,6 +1,6 @@
 cask "token-spendie" do
-  version "0.0.6"
-  sha256 "a18edbe637e21fa68cfdc53de6b0720b4f39b20db25b127b36c113edde40c0ab"
+  version "0.0.7"
+  sha256 "ea0f4b2bf117be8275836a531d181919022896264e7be358320efd6447eb8177"
 
   url "https://github.com/sensecherise/token-spendie/releases/download/v#{version}/TokenSpendie-#{version}.zip"
   name "Token Spendie"
